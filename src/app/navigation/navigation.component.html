@@ -1,0 +1,5 @@
+<ul class="d-flex flex-row m-0 p-0 rounded-bottom shadow navigation-container">
+  <li *ngFor="let link of linkList" class="p-3">
+    <a [routerLink]="link.url">{{link.label}}</a>
+  </li>
+</ul>

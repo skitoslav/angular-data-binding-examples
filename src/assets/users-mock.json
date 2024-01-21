@@ -1,4 +1,4 @@
-export const USERS = [
+[
   {
     "id": "080f74f1-4b94-4f1e-95f9-1d6cf7a8040f",
     "firstName": "Jude",
@@ -69,4 +69,4 @@ export const USERS = [
     "phone": "535.832.5164 x73257",
     "email": "Candida.Parker10@gmail.com"
   }
-];
+]

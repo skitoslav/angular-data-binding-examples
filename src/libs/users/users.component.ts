@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsersService } from './+state/users.service';
+import { UiUserListTableComponent } from '../shared/ui-user-list-table/ui-user-list-table.component';
 
 @Component({
   selector: 'adbe-users',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, UiUserListTableComponent],
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

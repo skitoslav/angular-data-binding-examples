@@ -34,3 +34,9 @@ html, body {
 :root {
   --root-navigation-height: 56px;
 }
+
+.adbe {
+  &_pretty-code {
+    background-color: beige;
+  }
+}

@@ -31,7 +31,7 @@ export class NavigationComponent {
   readonly dataBindingLinkList = [
     {
       label: 'Based in component',
-      url: ApplicationRouteEnum.IN_DEVELOPMENT
+      url: ApplicationRouteEnum.BASED_IN_COMPONENT
     },
     {
       label: 'Based in service',

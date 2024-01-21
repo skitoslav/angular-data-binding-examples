@@ -1,21 +1,26 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, map } from 'rxjs';
-import { IUser } from './user.interface';
+import { BehaviorSubject, map, take } from 'rxjs';
+import { IUser } from '../../../api/users';
 import { HttpClient } from '@angular/common/http';
-import { USERS } from './users-mock.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  readonly initialUsers = USERS.slice() as IUser[];
   readonly users$ = new BehaviorSubject<IUser[]>([]);
 
-  constructor() {
+  constructor(private readonly httpClient: HttpClient) {
     this.dropState();
   }
 
   dropState(): void {
-    this.users$.next((this.initialUsers))
+    this.httpClient
+      .get<IUser[]>('./assets/users-mock.json')
+      .pipe(
+        take(1)
+      )
+      .subscribe((response) => {
+        this.users$.next((response));
+      })
   }
 }

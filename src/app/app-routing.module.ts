@@ -20,6 +20,10 @@ const routes: Routes = [
     loadComponent: () => import('../libs/shared/in-development/in-development.component').then(c => c.InDevelopmentComponent)
   },
   {
+    path: ApplicationRouteEnum.BASED_IN_COMPONENT,
+    loadComponent: () => import('../libs/based-in-component/based-in-component.component').then(c => c.BasedInComponentComponent)
+  },
+  {
     path: '**',
     redirectTo: ApplicationRouteEnum.DASHBOARD
   }

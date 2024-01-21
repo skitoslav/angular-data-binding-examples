@@ -1,8 +1,22 @@
-.navigation-container {
+:host {
+  display: block;
   z-index: 1;
-  list-style: none;
+  height: var(--root-navigation-height);
 
-  a {
-    text-decoration: none;
+  ul {
+    list-style: none;
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+.nested-list+.nested-list {
+  border-left: 1px solid #000000;
+}
+
+ul>.nested-list:not(:last-child) {
+  border-right: 1px solid #000000;
+}
+

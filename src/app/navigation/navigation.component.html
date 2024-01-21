@@ -1,5 +1,23 @@
-<ul class="d-flex flex-row m-0 p-0 rounded-bottom shadow navigation-container">
-  <li *ngFor="let link of linkList" class="p-3">
-    <a [routerLink]="link.url">{{link.label}}</a>
+<ul class="d-flex flex-row m-0 p-0 rounded-bottom shadow">
+  <li class="nested-list">
+    <ul class="d-flex flex-row m-0 p-0">
+      <ng-container *ngFor="let link of linkList">
+        <ng-container *ngTemplateOutlet="listItem; context: { $implicit: link }"></ng-container>
+      </ng-container>
+    </ul>
+  </li>
+
+  <li class="nested-list">
+    <ul class="d-flex flex-row m-0 p-0">
+      <ng-container *ngFor="let link of dataBindingLinkList">
+        <ng-container *ngTemplateOutlet="listItem; context: { $implicit: link }"></ng-container>
+      </ng-container>
+    </ul>
   </li>
 </ul>
+
+<ng-template #listItem let-link>
+  <li class="p-3">
+    <a [routerLink]="link.url">{{link.label}}</a>
+  </li>
+</ng-template>

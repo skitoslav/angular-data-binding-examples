@@ -25,3 +25,12 @@
 
 @import "bootstrap/scss/buttons";
 /* Bootstrap END*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --root-navigation-height: 56px;
+}

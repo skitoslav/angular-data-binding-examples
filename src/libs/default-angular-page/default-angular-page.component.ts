@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-default-angular-page',
+  selector: 'adbe-default-angular-page',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './default-angular-page.component.html',

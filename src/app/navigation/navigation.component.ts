@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 import { ApplicationRouteEnum } from '../../libs/shared/enums/navigation/application';
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'adbe-navigation',
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './navigation.component.html',
@@ -25,6 +25,21 @@ export class NavigationComponent {
     {
       label: 'Users',
       url: ApplicationRouteEnum.USERS
+    },
+  ];
+
+  readonly dataBindingLinkList = [
+    {
+      label: 'Based in component',
+      url: ApplicationRouteEnum.IN_DEVELOPMENT
+    },
+    {
+      label: 'Based in service',
+      url: ApplicationRouteEnum.IN_DEVELOPMENT
+    },
+    {
+      label: 'Behaviour Subject',
+      url: ApplicationRouteEnum.IN_DEVELOPMENT
     },
   ];
 }

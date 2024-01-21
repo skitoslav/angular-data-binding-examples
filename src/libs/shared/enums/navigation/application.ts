@@ -1,5 +1,6 @@
 export enum ApplicationRouteEnum {
   DASHBOARD = './',
   ANGULAR = 'default-angular-page',
-  USERS = 'users'
+  USERS = 'users',
+  IN_DEVELOPMENT = 'in-development',
 }

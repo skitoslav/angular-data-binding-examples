@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UsersService } from './+state/users.service';
 
 @Component({
-  selector: 'app-users',
+  selector: 'adbe-users',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './users.component.html',

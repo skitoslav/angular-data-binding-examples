@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Description</h1>
+    </div>
+
+    <div class="col-12">
+      <p class="lead">
+        When data is <strong>based in component</strong> it provides the fastest way of building a new functionality.
+        <br>There is no need in any other components, services or more complex architect solutions.
+      </p>
+
+      <p class="lead">
+        This solutions is worth it when you need to create the MVP of some functionality.
+        <br> Or when you create something tiny and without any future plans for expansion.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>Code example</h1>
+
+      <pre class="adbe_pretty-code"><code>
+        export class YourComponent &#123;
+          users$: Observable&lt;IUser[]&gt;
+
+          constructor(private readonly httpClient: HttpClient) &#123;
+            this.users$ = this.httpClient.get&lt;IUser[]&gt;('api/users');
+          &#125;
+        &#125;
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>Result</h1>
+
+      <adbe-ui-user-list-table
+        [userList]="users$ | async"
+      ></adbe-ui-user-list-table>
+    </div>
+  </div>
+</div>

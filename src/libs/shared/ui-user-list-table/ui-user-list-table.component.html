@@ -1,0 +1,25 @@
+<ng-container *ngIf="userList?.length; else noDataTemplate">
+  <ng-container *ngTemplateOutlet="dataTemplate"></ng-container>
+</ng-container>
+
+<ng-template #noDataTemplate>
+  <h1>No data to display</h1>
+</ng-template>
+
+<ng-template #dataTemplate>
+  <table class="user-list-table m-auto">
+    <tr class="bg-light">
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+    </tr>
+
+    <tr *ngFor="let user of userList">
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  </table>
+</ng-template>

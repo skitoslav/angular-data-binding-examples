@@ -35,7 +35,7 @@ export class NavigationComponent {
     },
     {
       label: 'Based in service',
-      url: ApplicationRouteEnum.IN_DEVELOPMENT
+      url: ApplicationRouteEnum.BASED_IN_SERVICE
     },
     {
       label: 'Behaviour Subject',

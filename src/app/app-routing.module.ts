@@ -24,6 +24,10 @@ const routes: Routes = [
     loadComponent: () => import('../libs/based-in-component/based-in-component.component').then(c => c.BasedInComponentComponent)
   },
   {
+    path: ApplicationRouteEnum.BASED_IN_SERVICE,
+    loadComponent: () => import('../libs/based-in-service/based-in-service.component').then(c => c.BasedInServiceComponent)
+  },
+  {
     path: '**',
     redirectTo: ApplicationRouteEnum.DASHBOARD
   }

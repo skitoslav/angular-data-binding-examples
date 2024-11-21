@@ -5,12 +5,11 @@ import { RouterLink } from '@angular/router';
 import { ApplicationRouteEnum } from '../../libs/shared/enums/navigation/application';
 
 @Component({
-  selector: 'adbe-navigation',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'adbe-navigation',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './navigation.component.html',
+    styleUrls: ['./navigation.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavigationComponent {
   readonly linkList = [

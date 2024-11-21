@@ -6,12 +6,11 @@ import { UsersServiceModule } from './+state/users-service.module';
 
 
 @Component({
-  selector: 'adbe-based-in-service',
-  standalone: true,
-  imports: [CommonModule, UiUserListTableComponent, UsersServiceModule],
-  templateUrl: './based-in-service.component.html',
-  styleUrls: ['./based-in-service.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'adbe-based-in-service',
+    imports: [CommonModule, UiUserListTableComponent, UsersServiceModule],
+    templateUrl: './based-in-service.component.html',
+    styleUrls: ['./based-in-service.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BasedInServiceComponent {
   constructor(public readonly userService: UserService) {}

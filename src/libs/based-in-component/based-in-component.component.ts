@@ -8,11 +8,11 @@ import {
 import { IUser } from '../../api/users';
 
 @Component({
-    selector: 'adbe-based-in-component',
-    imports: [CommonModule, UiUserListTableComponent],
-    templateUrl: './based-in-component.component.html',
-    styleUrls: ['./based-in-component.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'adbe-based-in-component',
+  imports: [CommonModule, UiUserListTableComponent],
+  templateUrl: './based-in-component.component.html',
+  styleUrls: ['./based-in-component.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BasedInComponentComponent {
   users$: Observable<IUser[]>;

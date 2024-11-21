@@ -3,7 +3,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 @Component({
   selector: 'adbe-root',
-  imports: [NavigationComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: false,

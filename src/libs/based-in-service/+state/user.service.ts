@@ -7,7 +7,8 @@ import { IUser } from '../../../api/users';
 export class UserService {
   users$ = this.list$();
 
-  constructor(private readonly httpClient: HttpClient) {}
+  constructor(private readonly httpClient: HttpClient) {
+  }
 
   list$(): Observable<IUser[]> {
     return this.httpClient.get<IUser[]>('./assets/users-mock.json');

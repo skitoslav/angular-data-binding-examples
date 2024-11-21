@@ -2,13 +2,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { ApplicationRouteEnum } from '../../libs/shared/enums/navigation/application';
+import { NgTemplateOutlet } from '@angular/common';
 
 @Component({
-    selector: 'adbe-navigation',
-    imports: [RouterLink],
-    templateUrl: './navigation.component.html',
-    styleUrls: ['./navigation.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'adbe-navigation',
+  imports: [RouterLink, NgTemplateOutlet],
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavigationComponent {
   readonly linkList = [

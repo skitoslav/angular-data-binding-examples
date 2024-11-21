@@ -8,9 +8,9 @@ describe('UiUserListTableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ UiUserListTableComponent ]
-    })
-    .compileComponents();
+        imports: [UiUserListTableComponent]
+      })
+      .compileComponents();
 
     fixture = TestBed.createComponent(UiUserListTableComponent);
     component = fixture.componentInstance;

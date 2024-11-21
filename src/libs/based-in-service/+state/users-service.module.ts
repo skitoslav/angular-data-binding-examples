@@ -4,4 +4,5 @@ import { UserService } from './user.service';
 @NgModule({
   providers: [UserService],
 })
-export class UsersServiceModule { }
+export class UsersServiceModule {
+}

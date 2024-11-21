@@ -8,9 +8,9 @@ describe('BasedInServiceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ BasedInServiceComponent ]
-    })
-    .compileComponents();
+        imports: [BasedInServiceComponent]
+      })
+      .compileComponents();
 
     fixture = TestBed.createComponent(BasedInServiceComponent);
     component = fixture.componentInstance;

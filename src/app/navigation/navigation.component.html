@@ -1,17 +1,17 @@
 <ul class="d-flex flex-row m-0 p-0 rounded-bottom shadow">
   <li class="nested-list">
     <ul class="d-flex flex-row m-0 p-0">
-      <ng-container *ngFor="let link of linkList">
+      @for (link of linkList; track $index) {
         <ng-container *ngTemplateOutlet="listItem; context: { $implicit: link }"></ng-container>
-      </ng-container>
+      }
     </ul>
   </li>
 
   <li class="nested-list">
     <ul class="d-flex flex-row m-0 p-0">
-      <ng-container *ngFor="let link of dataBindingLinkList">
+      @for (link of dataBindingLinkList; track $index) {
         <ng-container *ngTemplateOutlet="listItem; context: { $implicit: link }"></ng-container>
-      </ng-container>
+      }
     </ul>
   </li>
 </ul>

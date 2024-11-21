@@ -2,28 +2,28 @@
 
 /* Bootstrap START*/
 // Import functions, variables, and mixins needed by other Bootstrap files
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/variables-dark";
-@import 'bootstrap/scss/maps';
-@import "bootstrap/scss/mixins";
+@use "bootstrap/scss/functions";
+@use "bootstrap/scss/variables";
+@use "bootstrap/scss/variables-dark";
+@use "bootstrap/scss/maps";
+@use "bootstrap/scss/mixins";
 
 // Import Bootstrap Reboot
-@import "bootstrap/scss/root"; // Contains :root CSS variables used by other Bootstrap files
-@import "bootstrap/scss/reboot";
+@use "bootstrap/scss/root"; // Contains :root CSS variables used by other Bootstrap files
+@use "bootstrap/scss/reboot";
 
 // Import Bootstrap Grid
-@import "bootstrap/scss/containers"; // Add .container and .container-fluid classes
-@import "bootstrap/scss/grid"; // Add the grid system
+@use "bootstrap/scss/containers"; // Add .container and .container-fluid classes
+@use "bootstrap/scss/grid"; // Add the grid system
 
 // Import Bootstrap Utilities
-@import "bootstrap/scss/utilities"; // Configures the utility classes that should be generated
-@import "bootstrap/scss/utilities/api"; // Generates the actual utility classes
+@use "bootstrap/scss/utilities"; // Configures the utility classes that should be generated
+@use "bootstrap/scss/utilities/api"; // Generates the actual utility classes
 
 // Import Bootstrap Typography
-@import "bootstrap/scss/type";
+@use "bootstrap/scss/type";
 
-@import "bootstrap/scss/buttons";
+@use "bootstrap/scss/buttons";
 /* Bootstrap END*/
 
 html, body {
